@@ -65,12 +65,10 @@ table {
 * {
     box-sizing: border-box;
     max-width: 100%;
-    border: 1px solid gray;
 }
 
 html{
     font-size:62.5%;
-    border: 1px solid blue;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -89,7 +87,6 @@ section, footer{
 .container {
     width: 80%;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 a {
@@ -107,7 +104,6 @@ a {
     font-size: 2.2rem;
     align-items: center;
     align-content: flex-start;
-    /* margin: 0% 1%; */
 }
 
 .nav img {
@@ -116,7 +112,6 @@ a {
 
 .nav a {
     color: black;
-    /* font-size: ; */
 }
 
 
@@ -126,7 +121,6 @@ a {
 header {
     display: flex;
     justify-content: center;
-    /* height: 31vh; */
 }
 
 header img {
@@ -144,13 +138,13 @@ header img {
     justify-content: center;
     margin-bottom: 4%;
     border-bottom: 2px solid #ff4b00;
-    text-align: justify;
 }
 
 .top-content .text-container {
     width: 50%;
     padding: 0 1%;
-    padding-bottom: 4%;  
+    padding-bottom: 4%;
+    align-items: center; 
 }
 
 .top-content .text-container h2 {
@@ -190,6 +184,9 @@ header img {
     width: 150px;
     height: 150px;
 }
+
+
+
 
 #box1 {
     background: teal;
@@ -325,9 +322,6 @@ footer nav a {
     padding-top: 5%;
 }
 
-
-
-
 .work p {
     margin-bottom: 4%;
 }
@@ -347,9 +341,24 @@ footer nav a {
 
 @media (max-width: 500px) {
 
-    .container {
-        max-width: 100%;
-        margin: none;
+    /*Home Page Styles*/
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+    }
+    
+    .nav img {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin: 0% 30%;
+    }
+    
+    .nav a {
+        color: black;
+        padding: 5% 0%;
     }
 
     .nav img {
@@ -366,24 +375,42 @@ footer nav a {
     .top-content {
         display: flex;
         flex-direction: column;
+        justify-content: none;
     }
+
+    .top-content .text-container {
+        width: 90%;
+        margin-left: 5%;
+        padding: 0%;
+    }
+    .top-content .text-container h2 {
+        padding: 4% 0%;
+    }
+
+
+
+
+
+
+
 
 
     .middle-content h2 {
         text-align: center;
     }
-
-
-
-
+    
+    .middle-content .boxes {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 5%;;
+    }
 
     .bottom-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        /* justify-content: center; */
-    }
+        }
 
     .bottom-content .text-container h2 {
         text-align: center;
@@ -393,12 +420,69 @@ footer nav a {
         width: 80%;
     }
 
+
+
+
     footer {
-        max-width: 50%;
+        display: flex;
+        width: 100%;
+        background-color: #ff4b00;
+        font-size: 1.5rem;
+        justify-content: center;
+
+    }
+    
+    footer nav {
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    
+    footer nav a {
+        color: white;
+        display: flex;
+        padding: 5% 0%;
+        justify-content: center;
+    }
+
+
+
+    /*About Page Styling*/
+
+
+    .about h3 {
+        text-align: center;
+        padding: 5% 0%;
+    }
+
+    .about p {
+        margin-bottom: 5%;
     }
 
 
 
 
+    .pics-row {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+    .pics-element {
+        width: 100%;
+        padding-top: 10%;
+    }
+    
+    .pics-element h3 {
+        text-align: center;
+    }
+    
+    .bottom {
+        padding-top: 0%;
+    }
+    
+    .work h3 {
+        text-align: center;
+    }
+    
 
 } 
