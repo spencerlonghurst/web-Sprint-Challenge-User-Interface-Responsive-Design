@@ -97,20 +97,22 @@ a {
 /*Nav Bar Styles*/
 
 
-.nav {
+nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     font-size: 2.2rem;
     align-items: center;
     align-content: flex-start;
+    padding: 2%;
+    margin-bottom: 5%;
 }
 
-.nav img {
-    width: 20%;
+nav img {
+    width: 25%;
 }
 
-.nav a {
+nav a {
     color: black;
 }
 
